@@ -1,16 +1,20 @@
 # PersonalWebsite
 
-A modern, fluid personal portfolio website showcasing work experience, projects, and personal interests.
+A modern, fluid personal portfolio website with dark brown & orange theme, showcasing work experience, projects, and personal interests using professional UI libraries.
 
 ## Features
 
+- **Dark Theme**: Beautiful dark brown background with warm orange accents
+- **Modern UI Libraries**: Built with Bootstrap 5.3, Font Awesome 6.4, and AOS animations
 - **Responsive Design**: Fully responsive layout that works on all devices
-- **Smooth Animations**: Fluid transitions and scroll-based animations
-- **GitHub Integration**: Automatically fetches and displays your latest GitHub projects
+- **Smooth Animations**: Floating cards, hover effects, and scroll-based animations
+- **GitHub Integration**: Automatically fetches and displays your latest GitHub projects with icons
+- **Company Logos**: Experience section features company logos via Clearbit API
+- **Single-Page Navigation**: Smooth scrolling to all sections
 - **Multi-Section Layout**:
-  - Home: Personal introduction and overview
-  - Experience: Professional work history with timeline visualization
-  - Projects: GitHub projects showcase with live data
+  - Home: Personal introduction with gradient text effects
+  - Experience: Professional work history with floating cards and company logos
+  - Projects: GitHub projects showcase with Font Awesome icons
   - Interests: Personal hobbies including photography (VSCO integration) and fashion
 
 ## Quick Start
@@ -39,22 +43,58 @@ Edit `index.html` to customize:
 
 ### Update GitHub Username
 
-In `script.js`, update the GitHub username on line 76:
+In `script.js`, update the GitHub username:
 ```javascript
 const username = 'Samuel-T-W';  // Change this to your GitHub username
 ```
 
 ### Update VSCO Link
 
-The VSCO gallery link is already set to `https://vsco.co/memoir-mosaics/gallery`. To change it, edit the link in the Interests section of `index.html`.
+The VSCO gallery link is set to `https://vsco.co/memoir-mosaics/gallery`. To change it, edit the link in the Interests section of `index.html`.
+
+### Customize Theme Colors
+
+Edit the CSS variables in `styles.css`:
+```css
+:root {
+    --primary-orange: #ff9f43;
+    --dark-orange: #d87b2c;
+    --dark-brown: #1a1410;
+    /* ... more colors */
+}
+```
 
 ## Technologies Used
 
-- HTML5
-- CSS3 (with CSS Grid and Flexbox)
-- Vanilla JavaScript
-- GitHub API
-- Google Fonts (Inter)
+- **Bootstrap 5.3**: Modern responsive CSS framework
+- **Font Awesome 6.4**: Professional icon library
+- **AOS (Animate On Scroll)**: Smooth scroll animations
+- **HTML5**: Semantic markup
+- **CSS3**: Custom properties, Grid, and Flexbox
+- **Vanilla JavaScript**: No jQuery required
+- **GitHub API**: Dynamic project fetching
+- **Clearbit API**: Company logo integration
+- **Google Fonts**: Poppins font family
+
+## Features in Detail
+
+### Experience Cards
+- Float on hover with smooth transitions
+- Company logos automatically loaded
+- Shadow effects for depth
+- Responsive skill tags
+
+### Project Cards
+- Icons automatically selected based on project name
+- Language badges with color coding
+- Star and fork counts
+- Direct links to GitHub repositories
+
+### Dark Theme
+- Warm brown and orange color palette
+- Optimized for readability
+- Custom scrollbar styling
+- Gradient effects on key elements
 
 ## Deployment
 
@@ -69,6 +109,13 @@ For GitHub Pages:
 2. Navigate to Pages
 3. Select the branch (e.g., `main`) as the source
 4. Your site will be published at `https://yourusername.github.io/PersonalWebsite/`
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
 ## License
 
