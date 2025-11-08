@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel T-W | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Samuel T-W</div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#interests" class="nav-link">Interests</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section home-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Hello, I'm <span class="gradient-text">Samuel</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        A passionate professional exploring the intersection of technology, creativity, and innovation.
+                    </p>
+                    <p class="hero-description">
+                        I'm driven by curiosity and the desire to create meaningful solutions. 
+                        Whether it's building software, capturing moments through photography, or expressing myself through fashion,
+                        I believe in the power of authentic self-expression.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#experience" class="btn btn-primary">View My Work</a>
+                        <a href="#interests" class="btn btn-secondary">Explore My Interests</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Your Current/Recent Position</h3>
+                            <p class="timeline-company">Company Name</p>
+                            <p class="timeline-period">2023 - Present</p>
+                            <p class="timeline-description">
+                                Describe your role, responsibilities, and key achievements. Highlight the impact you've made
+                                and the technologies or methodologies you've worked with.
+                            </p>
+                            <div class="timeline-skills">
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Previous Position</h3>
+                            <p class="timeline-company">Previous Company</p>
+                            <p class="timeline-period">2021 - 2023</p>
+                            <p class="timeline-description">
+                                Detail your previous role, focusing on accomplishments, projects completed, and skills developed.
+                                Quantify your impact where possible.
+                            </p>
+                            <div class="timeline-skills">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Data Analysis</span>
+                                <span class="skill-tag">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Earlier Position</h3>
+                            <p class="timeline-company">Earlier Company</p>
+                            <p class="timeline-period">2019 - 2021</p>
+                            <p class="timeline-description">
+                                Describe your earlier experience, highlighting how it contributed to your professional growth
+                                and the foundation it provided for your career.
+                            </p>
+                            <div class="timeline-skills">
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">Spring Boot</span>
+                                <span class="skill-tag">AWS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">A collection of my work and contributions on GitHub</p>
+                <div id="projectsGrid" class="projects-grid">
+                    <!-- Projects will be loaded dynamically -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Loading Projects...</h3>
+                        </div>
+                        <p class="project-description">
+                            Fetching your latest GitHub projects...
+                        </p>
+                    </div>
+                </div>
+                <div class="github-link">
+                    <a href="https://github.com/Samuel-T-W" target="_blank" class="btn btn-primary">
+                        View All on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section id="interests" class="section interests-section">
+            <div class="container">
+                <h2 class="section-title">Hobbies & Interests</h2>
+                <p class="section-subtitle">Beyond the keyboard - what makes me, me</p>
+                
+                <div class="interests-grid">
+                    <div class="interest-card">
+                        <div class="interest-icon">📸</div>
+                        <h3 class="interest-title">Photography</h3>
+                        <p class="interest-description">
+                            Capturing moments and telling stories through the lens. 
+                            I love exploring different perspectives and finding beauty in everyday scenes.
+                        </p>
+                    </div>
+
+                    <div class="interest-card">
+                        <div class="interest-icon">👔</div>
+                        <h3 class="interest-title">Fashion</h3>
+                        <p class="interest-description">
+                            Self-expression through style. I believe fashion is an art form that allows us 
+                            to communicate who we are without saying a word.
+                        </p>
+                    </div>
+
+                    <div class="interest-card">
+                        <div class="interest-icon">🎨</div>
+                        <h3 class="interest-title">Creative Expression</h3>
+                        <p class="interest-description">
+                            From visual arts to creative projects, I'm always exploring new ways to express 
+                            ideas and bring imagination to life.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="vsco-gallery">
+                    <h3 class="gallery-title">My Photography</h3>
+                    <p class="gallery-subtitle">Explore my visual stories on VSCO</p>
+                    <div class="vsco-embed">
+                        <a href="https://vsco.co/memoir-mosaics/gallery" target="_blank" class="vsco-link">
+                            <div class="vsco-preview">
+                                <div class="vsco-icon">VSCO</div>
+                                <p>Visit my gallery at memoir-mosaics</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Samuel T-W. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/Samuel-T-W" target="_blank">GitHub</a>
+                    <a href="https://vsco.co/memoir-mosaics/gallery" target="_blank">VSCO</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
